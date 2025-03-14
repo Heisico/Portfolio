@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  background-color: #C0C0C0;
+  background-color: #000000;
   color: #fff;
 }
 
@@ -164,8 +164,8 @@ header .mobile-nav {
 }
 
 .hero .container .content h1 span {
-  background: #fff;
-  color: #000;
+  background: #EDE9F5;
+  color: #1E1B29  ;
   font-weight: bold;
   padding: 4px;
   border-radius: 8px;
@@ -176,9 +176,9 @@ header .mobile-nav {
   padding: 0.1em 0.25em;
   width: 13em;
   height: 4.2em;
-  color: #fff;
-  background-color: #000;
-  border: 0.08em solid #fff;
+  color: #EDE9F5;
+  background-color: #1E1B29;
+  border: 0.08em solid #EDE9F5;
   border-radius: 0.3em;
   font-size: 12px;
   margin-top: 20px;
@@ -192,22 +192,47 @@ header .mobile-nav {
   bottom: 0.4em;
   width: 8.25em;
   height: 2.5em;
-  background-color: #000;
+  background-color: #1E1B29;
   border-radius: 0.2em;
   font-size: 1.5em;
-  border: 0.08em solid #fff;
-  box-shadow: 0 0.4em 0.1em 0.019em #fff;
+  border: 0.08em solid #EDE9F5;
+  box-shadow: 0 0.4em 0.1em 0.019em #EDE9F5;
 }
 
 .hero .container .content button span:active {
   transition: all 0.5s;
   transform: translate(0, 0.4em);
-  box-shadow: 0 0 0 0 #fff;
+  box-shadow: 0 0 0 0 #1E1B29;
 }
 
 .hero .container .content button span:not(active) {
   transition: all 1d;
 }
+
+.about .container .content svg text {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 132px;
+  animation: stroke 5s infinite alternate;
+}
+
+@keyframes stroke {
+  0% {
+    fill: transparent;
+    stroke: #9B5DE5;
+    stroke-width: 2px;
+    stroke-dasharray: 700;
+    stroke-dashoffset: 700;
+  }
+  100% {
+    fill: #9B5DE5;
+    stroke: transparent;
+    stroke-width: 0;
+    stroke-dasharray: 700;
+    stroke-dashoffset: 0;
+  }
+}
+
 
 .about {
   min-height: 100vh;
@@ -238,14 +263,14 @@ header .mobile-nav {
   justify-content: center;
   align-items: center;
   padding: 8px;
-  background-color: #191919;
+  background-color: #EDE9F5;
   border-radius: 16px;
-  width: 75%;
-  height: 75vh;
+  width: 55%;
+  height: 55vh;
 }
 
 .about .container .content .about-me .profile .image-box img {
-  width: 70%;
+  width: 80%;
 }
 
 .about .container .content .about-me .description {
@@ -275,7 +300,7 @@ header .mobile-nav {
   font-weight: 500;
   font-size: 2rem;
   padding: 4px 6px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 8px;
   color: #000;
 }
@@ -284,6 +309,30 @@ header .mobile-nav {
   font-size: 1.2rem;
   text-align: justify;
 }
+.container .content svg text {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 132px;
+  animation: stroke 5s infinite alternate;
+}
+
+@keyframes stroke {
+  0% {
+    fill: transparent;
+    stroke: #9B5DE5;
+    stroke-width: 2px;
+    stroke-dasharray: 700;
+    stroke-dashoffset: 700;
+  }
+  100% {
+    fill: #9B5DE5;
+    stroke: transparent;
+    stroke-width: 0;
+    stroke-dasharray: 700;
+    stroke-dashoffset: 0;
+  }
+}
+
 
 .skill,
 .project,

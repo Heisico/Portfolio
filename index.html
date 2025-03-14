@@ -6,7 +6,7 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Icon -->
-    <link rel="icon" href="assets/F.png" />
+    <link rel="icon" href="assets/F-removebg-preview.png" />
 
     <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
@@ -14,7 +14,7 @@
   <body>
     <header>
       <div class="logo">
-        <img src="assets/F.png" alt="logo" />
+        <img src="assets/F-removebg-preview.png" alt="logo" />
         <a href="/">Daniel Fajardo</a>
       </div>
 
@@ -24,10 +24,13 @@
         <a href="#skill">Skills</a>
         <a href="#project">Project</a>
         <a href="#contact">Contact</a>
+        
+        
+        
       </nav>
 
       <div class="extra-nav">
-        <button>Get In Touch</button>
+        <button>Get My Resume</button>
       </div>
 
       <div id="menu" class="hamburger-menu">
@@ -89,7 +92,9 @@
             </g>
           </svg>
         </div>
+        
         <ul>
+          
           <li><a class="nav-link" href="#">Home</a></li>
           <li><a class="nav-link" href="#about">About</a></li>
           <li><a class="nav-link" href="#skills">Skills</a></li>
@@ -97,29 +102,43 @@
           <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
+      
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
       <div class="container">
         <div class="content">
+          
           <svg viewBox="0 0 1500 500" data-aos="fade-down">
-            <text x="50%" y="50%" text-anchor="middle">Daniel Fajardo</text>
+            <text x="50%" y="50%" text-anchor="middle" fill="#5f43b2">Daniel Fajardo</text>
           </svg>
+
+
+          
           <h1 data-aos="zoom-in-up">
-            Delivering Custom Frontend Solutions that <span>Stand Out</span>
+            Building Custom Frontend Solutions for a  <span>Seamless User Experience</span>
           </h1>
-          <button data-aos="zoom-out"><span>Show my Work</span></button>
+
+          <a href="#project">
+            <button data-aos="zoom-out"><span>Show my Work</span></button>
+          </a>
+          
+          
         </div>
       </div>
     </section>
 
+
+
     <section id="about" class="about">
       <div class="container">
         <div class="content">
-          <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
-            About Me
-          </h1>
+          
+          <svg viewBox="0 0 4000 500" data-aos="zoom-in-down">
+            <text x="50%" y="50%" text-anchor="middle" fill="#5f43b2">About Me</text>
+          </svg>
+
           <div class="about-me">
             <div data-aos="zoom-out-right" data-aos-delay="300" class="profile">
               <div class="image-box">
@@ -164,9 +183,9 @@
     <section id="skill" class="skill">
       <div class="container">
         <div class="content">
-          <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
-            Skills
-          </h1>
+          <svg viewBox="0 0 4000 500" data-aos="zoom-in-down">
+            <text x="50%" y="50%" text-anchor="middle" fill="#5f43b2">Skills</text>
+          </svg>
 
           <div class="skills" data-aos-delay="500">
             <div data-aos="zoom-in-down" class="skill-box">
@@ -176,11 +195,16 @@
               <img src="assets/icon/css3.svg" alt="css" />
             </div>
             <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/pythonlogo.png" alt="Python" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
               <img src="assets/icon/javascript.svg" alt="javascript" />
             </div>
-            <!-- SWIFT,DOCKER,CANVA -->
             <div data-aos="zoom-in-down" class="skill-box">
-              <img src="assets/icon/typescript.svg" alt="typescript" />
+              <img src="assets/icon/swiftlogo-removebg-preview.png" alts="SWIFT" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/dockerlogo.png" alt="DOCKER" />
             </div>
             <div data-aos="zoom-in-down" class="skill-box">
               <img src="assets/icon/react.svg" alt="react" />
@@ -197,6 +221,10 @@
             <div data-aos="zoom-in-down" class="skill-box">
               <img src="assets/icon/github.svg" alt="github" />
             </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/canva.png" alt="CANVA" />
+            </div>
+            
           </div>
         </div>
       </div>
@@ -205,9 +233,10 @@
     <section id="project" class="project">
       <div class="container">
         <div class="content">
-          <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
-            Project
-          </h1>
+          <svg viewBox="0 0 4000 500" data-aos="zoom-in-down">
+            <text x="50%" y="50%" text-anchor="middle" fill="#5f43b2">Project</text>
+          </svg>
+          
 
           <div class="projects">
             <div data-aos="zoom-in-down" data-aos-delay="300" class="card">
@@ -228,17 +257,19 @@
               </div>
             </div>
             <div data-aos="zoom-in-down" data-aos-delay="400" class="card">
-              <img src="assets/" alt="project" />
+              <img src="assets/bizchats.png" alt="project" />
 
               <div class="description">
                 <h1>Bizchats</h1>
                 <p>
                   BizChats is a collaboration platform combining real-time messaging 
-                  with structured course and workspace management for businesses, education, and personal use.
+                  with structured course and workspace management
                 </p>
                 <div class="action">
-                  <button>Github</button>
-                  <button>Demo</button>
+
+                  
+                  <button onclick="window.open('https://main.dn5s0tbye754g.amplifyapp.com/', '_blank')">Demo</button>
+                  
                 </div>
               </div>
             </div>
@@ -253,9 +284,9 @@
     <section id="contact" class="contact">
       <div class="container">
         <div class="content">
-          <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
-            Contact
-          </h1>
+          <svg viewBox="0 0 4000 500" data-aos="zoom-in-down">
+            <text x="50%" y="50%" text-anchor="middle" fill="#5f43b2">Contact</text>
+          </svg>
 
           <form
             data-aos="zoom-in-down"
@@ -278,25 +309,25 @@
       <div data-aos="fade-up" data-aos-duration="1000" class="container">
         <div class="profile">
           <div class="logo">
-            <img src="assets/F.png" alt="logo" />
+            <img src="assets/F-removebg-preview.png" alt="logo" />
             <a href="">Daniel Fajardo</a>
           </div>  
 
-          <!-- Short About -->
-          <p>
-            I'm a passionate Front-End Developer who loves creating modern, responsive, 
-            and user-friendly web experiences. Always exploring new technologies to 
-            build better digital solutions.
-          </p>
+          
+         
 
           <!-- Social Media -->
           <div class="social-media-container">
             <div class="social-media">
-              <box-icon color="#fff" type="logo" name="instagram"></box-icon>
+              <a href="https://www.instagram.com/tresfjrdo/" target="_blank" rel="noopener noreferrer">
+                <box-icon color="#fff" type="logo" name="instagram"></box-icon>
+              </a>
             </div>
+            
             <div class="social-media">
               <box-icon color="#fff" name="youtube" type="logo"></box-icon>
             </div>
+            
             <div class="social-media">
               <box-icon
                 color="#fff"
@@ -310,61 +341,8 @@
           </div>
         </div>
 
-        <div class="link-container">
-          <div class="information">
-            <h1>Skills</h1>
-            <ul>
-              <li>
-                <a href="#">HTML</a>
-              </li>
-              <li>
-                <a href="#">React</a>
-              </li>
-              <li>
-                <a href="#">Java</a>
-              </li>
-              <li>
-                <a href="#">Python</a>
-              </li>
-              <li>
-                <a href="#">Typescript</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="resource">
-            <h1>Technology</h1>
-            <ul>
-              <li>
-                <a href="#">Github</a>
-              </li>
-              <li>
-                <a href="#">Figma</a>
-              </li>
-              
-            </ul>
-          </div>
-
-          <div class="navigation">
-            <h1>Navigation</h1>
-            <ul>
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Skills</a>
-              </li>
-              <li>
-                <a href="#">Project</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
+        
+        
         </div>
       </div>
     </footer>
