@@ -13,7 +13,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #fff;
+  background-color: #2b0000;
 }
 
 html {
@@ -72,7 +72,7 @@ header nav {
 }
 
 header nav a {
-  color: #fff;
+  color: #880808;
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
@@ -82,7 +82,7 @@ header nav a {
 header nav a::after {
   content: "";
   display: block;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #EE4B2B;
   width: 100%;
   transform: scaleX(0);
   transform-origin: right;
@@ -105,7 +105,7 @@ header .extra-nav {
 header .extra-nav button {
   cursor: pointer;
   background: transparent;
-  border: 2px solid #fff;
+  border: 2px solid #000;
   border-radius: 8px;
   color: #fff;
   font-weight: 600;
@@ -115,7 +115,7 @@ header .extra-nav button {
 }
 
 header .extra-nav button:hover {
-  background: #fff;
+  background: #2b0000;
   color: #000;
   transition: 0.3s linear;
 }
@@ -164,8 +164,8 @@ header .mobile-nav {
 }
 
 .hero .container .content h1 span {
-  background: #EDE9F5;
-  color: #1E1B29  ;
+  background: #ffffff;
+  color: #8B0000  ;
   font-weight: bold;
   padding: 4px;
   border-radius: 8px;
@@ -177,7 +177,7 @@ header .mobile-nav {
   width: 13em;
   height: 4.2em;
   color: #EDE9F5;
-  background-color: #1E1B29;
+  background-color: #8B0000;
   border: 0.08em solid #EDE9F5;
   border-radius: 0.3em;
   font-size: 12px;
@@ -192,7 +192,7 @@ header .mobile-nav {
   bottom: 0.4em;
   width: 8.25em;
   height: 2.5em;
-  background-color: #1E1B29;
+  background-color: #880808;
   border-radius: 0.2em;
   font-size: 1.5em;
   border: 0.08em solid #EDE9F5;
@@ -202,7 +202,7 @@ header .mobile-nav {
 .hero .container .content button span:active {
   transition: all 0.5s;
   transform: translate(0, 0.4em);
-  box-shadow: 0 0 0 0 #1E1B29;
+  box-shadow: 0 0 0 0 #880808;
 }
 
 .hero .container .content button span:not(active) {
@@ -258,19 +258,12 @@ header .mobile-nav {
   align-items: center;
 }
 
-.about .container .content .about-me .profile .image-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8px;
-  background-color: #EDE9F5;
-  border-radius: 16px;
-  width: 55%;
-  height: 55vh;
-}
+
 
 .about .container .content .about-me .profile .image-box img {
-  width: 80%;
+  width: 60%;
+  border-radius: 10%;  
+  object-fit: cover;  
 }
 
 .about .container .content .about-me .description {
@@ -362,7 +355,7 @@ header .mobile-nav {
 
 .skill .container .content .skills .skill-box {
   padding: 4px;
-  border: 2px solid #fff;
+  border: 2px solid #2b0000;
   border-radius: 8px;
   display: flex;
   justify-content: center;
@@ -445,7 +438,7 @@ header .mobile-nav {
 }
 
 .project .container .content .projects .card .description .action button:hover {
-  background: #fff;
+  background: #2b0000;
   color: #000;
   transition: 0.3s linear;
 }
@@ -793,4 +786,14 @@ footer .container .link-container .navigation ul li a {
   footer .container .link-container .navigation {
     width: 50%;
   }
+
+    
+
+
+
+
+  
+  
+  
+  
 }

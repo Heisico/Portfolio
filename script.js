@@ -17,5 +17,22 @@ navLink.forEach((link) => {
   });
 });
 
+const musicBtn = document.getElementById("music-btn");
+const musicIcon = document.getElementById("music-icon");
+const music = document.getElementById("background-music");
+
+let isPlaying = false;
+
+musicBtn.addEventListener("click", () => {
+  if (isPlaying) {
+    music.pause();
+    musicIcon.src = "assets/headphoneimg.png"; // Default icon
+  } else {
+    music.play();
+    musicIcon.src = "assets/headphoneimg.png"; // Change icon when playing
+  }
+  isPlaying = !isPlaying;
+});
+
 
 

@@ -10,6 +10,45 @@
 
     <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
+
+    <!-- CSS for the music aura -->
+    <style>
+      .music-toggle {
+          position: fixed;
+          bottom: 20px; /* Distance from bottom */
+          right: 20px;  /* Distance from right */
+          z-index: 1000; /* Keeps it on top */
+      }
+
+      #music-btn {
+          background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+          border: 5px solid white; /* White border */
+          border-radius: 50%; /* Makes it a circle */
+          width: 60px; /* Button size */
+          height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Floating effect */
+          transition: all 0.3s ease-in-out;
+      }
+
+      #music-btn:hover {
+          background-color: rgb(79, 2, 2); /* Slightly brighter on hover */
+      }
+
+      #music-icon {
+          width: 30px;
+          height: 30px;
+          filter: invert(1); /* Makes the icon white */
+      }
+  </style>
+
+
+
+
+
   </head>
   <body>
     <header>
@@ -105,13 +144,16 @@
       
     </header>
 
+    
+    
+
     <!-- Hero Section -->
     <section class="hero">
       <div class="container">
         <div class="content">
           
           <svg viewBox="0 0 1500 500" data-aos="fade-down">
-            <text x="50%" y="50%" text-anchor="middle" fill="#5f43b2">Daniel Fajardo</text>
+            <text x="50%" y="50%" text-anchor="middle" fill="#880808">Daniel Fajardo</text>
           </svg>
 
 
@@ -136,7 +178,7 @@
         <div class="content">
           
           <svg viewBox="0 0 4000 500" data-aos="zoom-in-down">
-            <text x="50%" y="50%" text-anchor="middle" fill="#5f43b2">About Me</text>
+            <text x="50%" y="50%" text-anchor="middle" fill="#880808">About Me</text>
           </svg>
 
           <div class="about-me">
@@ -184,7 +226,7 @@
       <div class="container">
         <div class="content">
           <svg viewBox="0 0 4000 500" data-aos="zoom-in-down">
-            <text x="50%" y="50%" text-anchor="middle" fill="#5f43b2">Skills</text>
+            <text x="50%" y="50%" text-anchor="middle" fill="#880808">Skills</text>
           </svg>
 
           <div class="skills" data-aos-delay="500">
@@ -233,8 +275,8 @@
     <section id="project" class="project">
       <div class="container">
         <div class="content">
-          <svg viewBox="0 0 4000 500" data-aos="zoom-in-down">
-            <text x="50%" y="50%" text-anchor="middle" fill="#5f43b2">Project</text>
+          <svg viewBox="0 0 4000 550" data-aos="zoom-in-down">
+            <text x="50%" y="50%" text-anchor="middle" fill="#880808">Project</text>
           </svg>
           
 
@@ -251,8 +293,7 @@
 
                 </p>
                 <div class="action">
-                  <button>Github</button>
-                  <button>Demo</button>
+                  <button onclick="window.open('https://github.com/Heisico/DailyDoodle', '_blank')">Github</button>
                 </div>
               </div>
             </div>
@@ -285,7 +326,7 @@
       <div class="container">
         <div class="content">
           <svg viewBox="0 0 4000 500" data-aos="zoom-in-down">
-            <text x="50%" y="50%" text-anchor="middle" fill="#5f43b2">Contact</text>
+            <text x="50%" y="50%" text-anchor="middle" fill="#880808">Contact</text>
           </svg>
 
           <form
@@ -343,9 +384,21 @@
 
         
         
-        </div>
+        
       </div>
     </footer>
+
+    
+    
+    <!-- Music Toggle Button -->
+  <div class="music-toggle">
+    <button id="music-btn">
+      <img id="music-icon" src="assets/headphoneimg.png" alt="Music Toggle" />
+    </button>
+  </div>
+  <audio id="background-music" loop>
+    <source src="assets/deftones.mp3" type="audio/mpeg" />
+  </audio>
 
     <script src="script.js"></script>
     <!-- Box Icon -->
