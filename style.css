@@ -387,7 +387,7 @@ header .mobile-nav {
 
 .project .container .content .projects .card {
   padding: 16px;
-  border: 2px solid #fff;
+  border: 2px solid #2b0000;
   border-radius: 12px;
   height: 450px;
 }
@@ -429,7 +429,7 @@ header .mobile-nav {
   justify-content: center;
   align-items: center;
   padding: 12px;
-  border: 2px solid #fff;
+  border: 2px solid #2b0000;
   border-radius: 12px;
   background: transparent;
   color: #fff;
@@ -786,6 +786,8 @@ footer .container .link-container .navigation ul li a {
   footer .container .link-container .navigation {
     width: 50%;
   }
+
+  
 
     
 

@@ -41,13 +41,44 @@
       #music-icon {
           width: 30px;
           height: 30px;
-          filter: invert(1); /* Makes the icon white */
+          filter: invert(1); 
       }
+
+      /* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #370000; 
+    min-width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    display: block;
+    padding:10px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change background on hover */
+.dropdown-content a:hover {
+    background-color: #ffffff;
+}
+
   </style>
-
-
-
-
 
   </head>
   <body>
@@ -63,6 +94,27 @@
         <a href="#skill">Skills</a>
         <a href="#project">Project</a>
         <a href="#contact">Contact</a>
+        <a href="https://docs.google.com/document/d/1RUVIjD8sJ_ghXwrtvdCBbsTEOVbu38AM/preview" target="_blank">Cover Letter</a>
+
+        <div class="dropdown">
+          <a href="#">Capstone</a>
+          <div class="dropdown-content">
+            <a href="https://docs.google.com/document/d/1afBDZGrwmf1jLfP2Kb1n44bjohgLyp1K/preview" target="_blank">Project Summary</a>
+
+            <a href="https://docs.google.com/document/d/1JbmOomsjn10R_fSK2ZJN4VY-76zI0Fk6/preview" target="_blank">Project Vision</a>
+            <a href="https://docs.google.com/document/d/1NPY4Xcu1GKoAUdjKnR7Q6ipsy4MkvowE/preview" target="_blank">Project/Business Requirements</a>
+            <a href="https://docs.google.com/document/d/1GJAyYRDOrSIDgx3njJUlAu0HzlKusw3t/preview" target="_blank">Project Plan</a>
+            <a href="GOOGLE_DRIVE_LINK_5" target="_blank">Requirements Analysis and Design</a>
+            <a href="GOOGLE_DRIVE_LINK_6" target="_blank">Wireframes/Mockups</a>
+            <a href="GOOGLE_DRIVE_LINK_7" target="_blank">Status Reports</a>
+            <a href="GOOGLE_DRIVE_LINK_8" target="_blank">System Implementation</a>
+          </div>
+        </div>
+        
+
+
+        
+
         
         
         
@@ -140,6 +192,7 @@
           <li><a class="nav-link" href="#skills">Skills</a></li>
           <li><a class="nav-link" href="#project">Project</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
+          
         </ul>
       </div>
       
@@ -298,11 +351,12 @@
                 </div>
               </div>
             </div>
+
             <div data-aos="zoom-in-down" data-aos-delay="400" class="card">
               <img src="assets/bizchats.png" alt="project" />
 
               <div class="description">
-                <h1>Bizchats</h1>
+                <h1>Bizchats (Web)</h1>
                 <p>
                   BizChats is a collaboration platform combining real-time messaging 
                   with structured course and workspace management for businesses, education, and personal use.
@@ -315,6 +369,63 @@
                 </div>
               </div>
             </div>
+
+            <div data-aos="zoom-in-down" data-aos-delay="400" class="card">
+              <img src="assets/bizchats.png" alt="project" />
+
+              <div class="description">
+                <h1>Bizchats (Mobile)</h1>
+                <p>
+                  This is the mobile version of BizChats, a collaboration platform that integrates real-time 
+                  messaging with structured course and workspace management for businesses, education, and personal use.
+                </p>
+                <div class="action">
+
+                  
+                  <button onclick="window.open('https://github.com/MilanTheMan/BizchatsMobile', '_blank')">Github</button>
+                  
+                </div>
+              </div>
+            </div>
+
+
+            <div data-aos="zoom-in-down" data-aos-delay="400" class="card">
+              <img src="assets/" alt="project" />
+
+              <div class="description">
+                <h1>Live Chat App</h1>
+                <p>
+                  A real-time chat application enabling users to engage in instant 
+                  communication through public and private chat rooms.
+                </p>
+                <div class="action">
+
+                  
+                  <button onclick="window.open('https://github.com/Heisico/ChatApp', '_blank')">Github</button>
+                  
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             
               </div>
             </div>

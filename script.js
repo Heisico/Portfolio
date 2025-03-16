@@ -34,21 +34,5 @@ musicBtn.addEventListener("click", () => {
   isPlaying = !isPlaying;
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  console.log("User visited the site at " + new Date().toLocaleString());
-  
-  // Track user interactions
-  document.addEventListener("click", function (event) {
-      console.log("User clicked on:", event.target);
-  });
-
-  document.addEventListener("mousemove", function (event) {
-      console.log("Mouse moved at:", event.clientX, event.clientY);
-  });
-
-  document.addEventListener("scroll", function () {
-      console.log("User scrolled the page.");
-  });
-});
 
 
