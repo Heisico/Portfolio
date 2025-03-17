@@ -35,4 +35,41 @@ musicBtn.addEventListener("click", () => {
 });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const contactForm = document.querySelector(".contact-form");
+
+  contactForm.addEventListener("submit", async function (event) {
+      event.preventDefault(); // Prevent the default page reload
+
+      const formData = new FormData(contactForm);
+
+      try {
+          const response = await fetch("https://formspree.io/f/mnnpngog", {
+              method: "POST",
+              body: formData,
+              headers: { "Accept": "application/json" }
+          });
+
+          if (response.ok) {
+              showSuccessMessage();
+              contactForm.reset(); // Clear the form after successful submission
+          } else {
+              alert("Oops! Something went wrong.");
+          }
+      } catch (error) {
+          alert("Error submitting the form. Please try again.");
+      }
+  });
+
+  function showSuccessMessage() {
+      const successMessage = document.createElement("div");
+      successMessage.innerText = "Message sent successfully!";
+      successMessage.classList.add("success-popup");
+      document.body.appendChild(successMessage);
+
+      setTimeout(() => {
+          successMessage.remove();
+      }, 3000); // Hide after 3 seconds
+  }
+});
 

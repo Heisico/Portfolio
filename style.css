@@ -129,6 +129,41 @@ header .mobile-nav {
   display: none;
 }
 
+.success-popup {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: rgb(98, 1, 1);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-button {
+  display: flex;
+  justify-content: center; /* Centers the button horizontally */
+  margin-top: 5px;
+}
+
+.contact-button button {
+  padding: 6px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #000000; /* Initial color */
+  border: 2px solid white; /* White border */
+  border-radius: 25px; /* Rounded rectangle */
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-button button:hover {
+  background-color: #2b0000; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight hover effect */
+}
+
 
 
 .hero {

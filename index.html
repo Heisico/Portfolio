@@ -476,23 +476,35 @@
           <svg viewBox="0 0 4000 500" data-aos="zoom-in-down">
             <text x="50%" y="50%" text-anchor="middle" fill="#880808">Contact</text>
           </svg>
-
-          <form
-            data-aos="zoom-in-down"
-            data-aos-delay="300"
+    
+          <form 
+            data-aos="zoom-in-down" 
+            data-aos-delay="300" 
             class="contact-form"
+            action="https://formspree.io/f/mnnpngog" 
+            method="POST"
           >
             <div class="input">
-              <input type="text" placeholder="Name..." />
-              <input type="email" placeholder="Email..." />
-              <input type="number" placeholder="Phone..." />
-              <input type="text" placeholder="Subject..." />
+              <input type="text" name="name" placeholder="Name..." required />
+              <input type="email" name="email" placeholder="Email..." required />
+              <input type="number" name="phone" placeholder="Phone..." />
+              <input type="text" name="subject" placeholder="Subject..." />
             </div>
-            <textarea name="message" placeholder="Message..."></textarea>
+            <textarea name="message" placeholder="Message..." required></textarea>
+
+            
+            <div class="contact-button">
+              <button type="submit">Send</button>
+          </div>
+          
+            
+            
+
           </form>
         </div>
       </div>
     </section>
+    
 
     <footer>
       <div data-aos="fade-up" data-aos-duration="1000" class="container">
